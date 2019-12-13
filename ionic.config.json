@@ -1,0 +1,7 @@
+{
+  "name": "tumgo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

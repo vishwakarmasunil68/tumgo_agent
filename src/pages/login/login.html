@@ -1,0 +1,106 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content>
+  <div style="height: 100%; background-color:#4e51a3;">
+    <div class="flex_center_content" style="height: 40%;">
+      <div>
+        <img src="assets/imgs/logo.png" style="width: 120px;height:120px;margin-top: 25%"/>
+        <p style="color: #FFFFFF;font-size: 20px;margin-top: 30px;padding-left: 7px;font-family: nexa_bold;">Sign In</p>
+      </div>
+    </div>
+
+    <div style="height: 60%;">
+      <div class="flex_center_content" style="width: 100%;">
+        <div class="flex_center_content" style="width: 80%;;border: 1px solid white;background-color: #FFFFFF;">
+          <div class="flex_center_content" style="background-color: #E0E0E0;width: 10%;height: 30px;">
+            <img src="assets/imgs/ic_user_icon.png" style="width: 12px;"/>
+          </div>
+          <input style="background: none;width: 90%;height: 30px;padding-left: 7px;font-size: 11px;padding-right: 7px;" placeholder="Username"/>
+        </div>
+      </div>
+      <div class="flex_center_content" style="width: 100%;margin-top: 20px;">
+        <div class="flex_center_content" style="width: 80%;;border: 1px solid white;background-color: #FFFFFF;">
+          <div class="flex_center_content" style="background-color: #E0E0E0;width: 10%;height: 30px;">
+            <img src="assets/imgs/ic_password_icon.png" style="width: 12px;"/>
+          </div>
+          <input type="password" style="background: none;height: 30px;width: 90%;padding-left: 7px;font-size: 11px;padding-right: 7px;" placeholder="Password"/>
+        </div>
+      </div>
+      <div class="flex_center_content" style="width: 100%;margin-top: 20px;">
+        <div class="flex_center_content" style="width: 80%;background-color: #FFFFFF;" (click)="signIn()">
+          <p style="color: #4e51a3;font-weight: 900;font-size: 18px;margin-top: 5px;margin-bottom: 5px;font-family: nexa_bold;">Sign In</p>
+        </div>
+      </div>
+      <div class="flex_center_content">
+        <div style="width: 80%">
+          <ion-row>
+            <ion-col col-6>
+              <!--            <ion-item>-->
+              <div style="display: flex;align-items: center;">
+                <ion-checkbox color="dark" checked="false"></ion-checkbox>
+                <!--                <ion-label style="color: #FFFFFF;">Remember Me</ion-label>-->
+                <p style="color: #FFFFFF;margin-left: 5px;font-weight: 800;font-family: nexa_bold;">Remember Me</p>
+              </div>
+              <!--            </ion-item>-->
+            </ion-col>
+            <ion-col col-6 text-right (click)="forgotPassword()">
+              <p style="color: #FFFFFF;font-weight: 800;font-family: nexa_bold;">Forget Password?</p>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+
+      <div class="flex_center_content" style="width: 100%;">
+
+        <div class="flex_center_content" style="display: flex;width: 80%">
+          <div style="width: 40%;border: 1px solid white;margin-right: 7px;">
+
+          </div>
+          <p style="color: #FFFFFF;font-weight: 800;font-family: nexa_bold;"> or </p>
+          <div style="width: 40%;border: 1px solid white;margin-left: 7px;">
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="flex_center_content" style="width: 100%;">
+
+        <div class="flex_center_content" style="display: flex;width: 80%">
+          <p style="color: #FFFFFF;font-weight: 800;font-family: nexa_bold;">Login With Your Social Media Account</p>
+        </div>
+
+      </div>
+
+      <div class="flex_center_content" style="width: 100%;">
+        <div class="flex_center_content" style="width: 80%;">
+          <div class="flex_center_content" style="border-radius: 7px;background-color: #FFFFFF;padding-left: 7px;padding-right: 7px;width: 100px;height: 30px;">
+            <img src="assets/imgs/ic_face_button.png" style="height: 15px;">
+            <p style="color: #4e51a3;margin-left: 7px;font-weight: 900;font-family: nexa_bold;font-size: 11px;">Facebook</p>
+          </div>
+          <div class="flex_center_content" style="margin-left: 7px;border-radius: 7px;background-color: #FFFFFF;padding-left: 7px;padding-right: 7px;width: 100px;height: 30px;">
+            <img src="assets/imgs/ic_twitter_icon.png" style="height: 15px;">
+            <p style="color: #4e51a3;margin-left: 7px;font-weight: 900;font-family: nexa_bold;font-size: 11px;">Twitter</p>
+          </div>
+          <div class="flex_center_content" style="margin-left: 7px;border-radius: 7px;background-color: #FFFFFF;padding-left: 7px;padding-right: 7px;width: 100px;height: 30px;">
+            <img src="assets/imgs/ic_g_icon.png" style="height: 15px;">
+            <p style="color: #4e51a3;margin-left: 7px;font-weight: 900;font-family: nexa_bold;font-size: 11px;">Google</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex_center_content" style="width: 100%;margin-top: 20px;">
+        <div class="flex_center_content" style="display: flex;width: 80%" (click)="goToSignUp()">
+          <p style="color: #FFFFFF;font-weight: 900;font-family: nexa_bold;">Don't have an account? Sign Up here</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</ion-content>

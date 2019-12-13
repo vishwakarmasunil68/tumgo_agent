@@ -1,0 +1,291 @@
+<ion-header>
+  <ion-navbar hideBackButton color="primary">
+    <ion-buttons left style="display: flex;">
+      <button (click)="openMenu()" style="background: transparent;">
+        <img src="assets/imgs/ic_ham.png" style="width: 25px;"/>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons center text-center>
+      <button (click)="openMenu()" style="background: transparent;" text-center>
+        <div class="flex_center_content" style="margin-left: -30px;">
+          <img src="assets/imgs/logo.png" style="width: 20px;">
+          <span text-color="title_white"
+                style="color: #FFFFFF;font-weight: 900;font-size: 17px;margin-top: 2px;margin-left: 7px;font-family: nexa_bold;">Tumgo</span>
+        </div>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons right>
+      <button (click)="openMenu()" style="background: transparent;" text-center>
+        <div class="flex_center_content">
+          <img src="assets/imgs/ic_notification.png" style="width: 20px;">
+        </div>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item no-padding no-margin text-center>
+    <ion-row>
+      <ion-col col-4>
+        <div class="flex_center_content" style="width: 100%;height: 90px;">
+          <div style="width: 90px;height: 90px;background-color: #BDBDBD;border-radius: 10px;">
+
+          </div>
+        </div>
+      </ion-col>
+      <ion-col col-8>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-weight: 900;color: #000000;font-size: 15px;font-family: nexa_bold;">06 Jan 2019 at 06:27 PM</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Vehicle Number :</p>
+          <p style="font-family: nexa_bold;">RJ 14 BL 9810</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Location :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Malviya Nagar, Jaipur</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Status :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Not Generated</p>
+        </div>
+        <ion-row style="margin-top: 5px;">
+          <ion-col col-6 text-center (click)="openTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Details</p>
+            </div>
+          </ion-col>
+          <ion-col col-6 text-center (click)="rejectTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Reject</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <ion-item no-padding no-margin text-center>
+    <ion-row>
+      <ion-col col-4>
+        <div class="flex_center_content" style="width: 100%;height: 90px;">
+          <div style="width: 90px;height: 90px;background-color: #BDBDBD;border-radius: 10px;">
+
+          </div>
+        </div>
+      </ion-col>
+      <ion-col col-8>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-weight: 900;color: #000000;font-size: 15px;font-family: nexa_bold;">06 Jan 2019 at 06:27 PM</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Vehicle Number :</p>
+          <p style="font-family: nexa_bold;">RJ 14 BL 9810</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Location :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Malviya Nagar, Jaipur</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Status :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Not Generated</p>
+        </div>
+        <ion-row style="margin-top: 5px;">
+          <ion-col col-6 text-center (click)="openTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Details</p>
+            </div>
+          </ion-col>
+          <ion-col col-6 text-center (click)="rejectTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Reject</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <ion-item no-padding no-margin text-center>
+    <ion-row>
+      <ion-col col-4>
+        <div class="flex_center_content" style="width: 100%;height: 90px;">
+          <div style="width: 90px;height: 90px;background-color: #BDBDBD;border-radius: 10px;">
+
+          </div>
+        </div>
+      </ion-col>
+      <ion-col col-8>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-weight: 900;color: #000000;font-size: 15px;font-family: nexa_bold;">06 Jan 2019 at 06:27 PM</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Vehicle Number :</p>
+          <p style="font-family: nexa_bold;">RJ 14 BL 9810</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Location :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Malviya Nagar, Jaipur</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Status :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Not Generated</p>
+        </div>
+        <ion-row style="margin-top: 5px;">
+          <ion-col col-6 text-center (click)="openTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Details</p>
+            </div>
+          </ion-col>
+          <ion-col col-6 text-center (click)="rejectTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Reject</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <ion-item no-padding no-margin text-center>
+    <ion-row>
+      <ion-col col-4>
+        <div class="flex_center_content" style="width: 100%;height: 90px;">
+          <div style="width: 90px;height: 90px;background-color: #BDBDBD;border-radius: 10px;">
+
+          </div>
+        </div>
+      </ion-col>
+      <ion-col col-8>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-weight: 900;color: #000000;font-size: 15px;font-family: nexa_bold;">06 Jan 2019 at 06:27 PM</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Vehicle Number :</p>
+          <p style="font-family: nexa_bold;">RJ 14 BL 9810</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Location :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Malviya Nagar, Jaipur</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Status :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Not Generated</p>
+        </div>
+        <ion-row style="margin-top: 5px;">
+          <ion-col col-6 text-center (click)="openTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Details</p>
+            </div>
+          </ion-col>
+          <ion-col col-6 text-center (click)="rejectTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Reject</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <ion-item no-padding no-margin text-center>
+    <ion-row>
+      <ion-col col-4>
+        <div class="flex_center_content" style="width: 100%;height: 90px;">
+          <div style="width: 90px;height: 90px;background-color: #BDBDBD;border-radius: 10px;">
+
+          </div>
+        </div>
+      </ion-col>
+      <ion-col col-8>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-weight: 900;color: #000000;font-size: 15px;font-family: nexa_bold;">06 Jan 2019 at 06:27 PM</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Vehicle Number :</p>
+          <p style="font-family: nexa_bold;">RJ 14 BL 9810</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Location :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Malviya Nagar, Jaipur</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Status :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Not Generated</p>
+        </div>
+        <ion-row style="margin-top: 5px;">
+          <ion-col col-6 text-center (click)="openTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Details</p>
+            </div>
+          </ion-col>
+          <ion-col col-6 text-center (click)="rejectTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Reject</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <ion-item no-padding no-margin text-center>
+    <ion-row>
+      <ion-col col-4>
+        <div class="flex_center_content" style="width: 100%;height: 90px;">
+          <div style="width: 90px;height: 90px;background-color: #BDBDBD;border-radius: 10px;">
+
+          </div>
+        </div>
+      </ion-col>
+      <ion-col col-8>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-weight: 900;color: #000000;font-size: 15px;font-family: nexa_bold;">06 Jan 2019 at 06:27 PM</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Vehicle Number :</p>
+          <p style="font-family: nexa_bold;">RJ 14 BL 9810</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Location :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Malviya Nagar, Jaipur</p>
+        </div>
+        <div style="display: flex;align-items: center;margin-top: 3px;">
+          <p style="font-family: nexa_bold;color: #9E9E9E;">Status :</p>
+          <p style="font-family: nexa_bold;margin-left: 5px;">Not Generated</p>
+        </div>
+        <ion-row style="margin-top: 5px;">
+          <ion-col col-6 text-center (click)="openTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Details</p>
+            </div>
+          </ion-col>
+          <ion-col col-6 text-center (click)="rejectTicket()">
+            <div style="width: 100px;background-color: #4e51a3;padding-top: 3px;padding-bottom: 3px;">
+              <p style="color: #FFFFFF;ont-family: nexa_bold;">Reject</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+
+
+
+
+
+
+  <ion-fab right bottom (click)="addOccurance()">
+    <button ion-fab large color="primary">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>
+
+
+<ion-footer no-padding>
+  <div class="flex_center_content" style="background-color: #4e51a3;height: 45px;display: flex;" (click)="logoutUser()">
+    <img src="assets/imgs/ic_logout.png" style="width: 17px;">
+    <p style="color: #FFFFFF;font-weight: 900;font-size: 17px;font-family: nexa_bold;padding-top: 0px;margin-left: 10px;">LOGOUT</p>
+  </div>
+</ion-footer>
